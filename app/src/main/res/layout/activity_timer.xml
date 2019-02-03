@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fallsdetect.TimerActivity">
+
+    <RelativeLayout
+        android:layout_width="171dp"
+        android:layout_height="116dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.fallsdetect.PickView
+            android:id="@+id/second_pv"
+            android:layout_width="80dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/second_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/second_pv"
+            android:text="Second"
+            android:textColor="#ffaa33"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="299dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/btn_saveAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:padding="0dp"
+            android:text="Message will be send automatically after"
+            android:textAlignment="center"
+            android:textColor="#ffaa33"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="316dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="272dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/massage"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:padding="0dp"
+            android:text="This message will be sent after falling:"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="I fell. I need your help."
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/savemsg"
+            android:layout_width="85dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="115dp"
+            android:background="@drawable/icon_b"
+            android:text="Save"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
